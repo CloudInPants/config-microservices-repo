@@ -1,1 +1,14 @@
-info.goodsservice: bar
+server:
+  port: 32200
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: barmaley0105
+    url: jdbc:postgresql://localhost:5432/goods-db
+  jpa:
+    database: POSTGRESQL
+    generate-ddl: true
+    show-sql: true
+  application:
+    name: goods-service
